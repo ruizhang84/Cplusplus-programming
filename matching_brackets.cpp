@@ -49,7 +49,6 @@ bool Stack<T, MAX>::isEmpty() const{
 
 int matching(string s){
     Stack<char> counter;
-
     for (int i=0; i < s.length(); i++){
         if (s[i] == '('){
             counter.push(s[i]);
@@ -67,6 +66,15 @@ int matching(string s){
     }
     return 1;
 }
+
+/* *********
+ sample input:
+ ((let)(us)(practice)((stack)(template)))
+ ()you(should))(out)put(No)
+ sample output:
+ Yes
+ No
+********** */
 
 int main(){
     string str;
