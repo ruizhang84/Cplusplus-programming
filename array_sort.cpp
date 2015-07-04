@@ -22,7 +22,6 @@ int main(){
     vector <int> x;
     
     cin >> n;
-    cin.ignore(); // need to flush the newline out of the buffer in between.
     while(cin >> s){
         x.push_back(s);
     }
